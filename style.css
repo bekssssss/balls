@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#2E3192, #1BFFFF);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1440px;
+    padding-top: 50px;
+    margin-left: 225px;
+}
+
+.balloon {
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    background-image: url('ball.png');
+    background-size: cover;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.4s;
+    border-radius: 15px;
+
+}
+
+.button {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(76, 76, 79, 0.25);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: #064a54;
+    transition: 0.4s;
+}
+
+.balloon.toggled {
+    border-radius: 15px;
+    transition: 0.4s;
+    background-color: #00e1ff;
+}
+
+.button {
+    width: 400px;
+    margin-left: 745px;;
+}
